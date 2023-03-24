@@ -1,0 +1,116 @@
+.grid-container {
+  /*background-color: bisque;*/
+  width:auto ;
+  height:auto;
+  display:grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: repeat(2,100px);
+  gap: 200px;
+}
+
+.grid-container  >  *{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+    grid-column: 1 / span 2;
+    /*background: skyblue;*/
+    color: #066ba6;
+    font-size: larger;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+  }
+
+footer{
+    grid-column: 1 / span 2;
+    /*background:  skyblue;*/
+    text-align:right;
+    color:#066ba6
+  }
+  
+.letrazul {
+    color:#066ba6
+  }
+
+.divfeliz {
+    /* animation properties */
+    animation-name: my-animation;
+    animation-duration: 3s;
+    animation-direction: alternate;
+    animation-iteration-count:infinite;
+    animation-timing-function: linear;
+
+    /* other properties */
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    position: absolute;
+    left:0; 
+    right:0; 
+    margin-left: auto;
+    margin-right: auto; 
+     }
+ 
+  .divcumple {
+    /* animation properties */
+    animation-name: my-animation2;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+          
+    /* other properties */
+    width: 300px;
+    height: 100px;
+    border-radius: 10px;
+    position: absolute;
+    left: 50; 
+    right:10; 
+    margin-left: auto;
+    margin-right: auto; 
+    }
+
+    /*aside{
+      width: 350px;
+      height: 500px;  
+
+    }*/
+
+    @keyframes my-animation {
+        from {
+          /*background-color: #ff7a59;*/
+          width: 300px;
+          top: 10px;
+        }
+        to {
+          /*background-color: #33475b;*/
+          width: 50px;
+          top: 100px;
+        }
+    }  
+
+    @keyframes my-animation2 {
+        from {
+          /*background-color: #ff7a59;*/
+          width: 300px;
+          top: 10px;
+        }
+        to {
+          /*background-color: #33475b;*/
+          width: 50px;
+          top: 100px;
+        }
+    }  
+
+    img {
+          width:  130px;
+          height: 130px;
+        }
+
+  
+    @media all and (max-widht:600px) {
+        aside, article{
+            grid-column: 1 / span 3;
+        } } 
